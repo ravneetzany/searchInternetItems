@@ -22,7 +22,7 @@ url = "https://www.olx.in/{olxLocPune}/cars_c84"
 #
 
 # Windows
-chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
+chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
 
 # headers = {
 #   'Accept':'application/json' 

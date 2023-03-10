@@ -1,0 +1,34 @@
+#  OLX Search
+#  pip install requests
+#import requests
+import webbrowser
+
+webbrowser.get("C:\Program Files\Google\Chrome\Application\chrome.exe %s").open("http://google.com")
+
+olxLocPune = "pune_g4059014"
+olxLocMum = "mumbai_g4058997"
+
+olxPrice = ""
+olxMake = ""
+olxModel = ""
+olxFuelType = ""
+olxOwners = "1"
+olxSortOrder = ""
+
+
+url = "https://www.olx.in/{olxLocPune}/cars_c84"
+#
+# https://www.olx.in/pune_g4059014/cars_c84?filter=first_owner_eq_{olxOwners}%2Cmake_eq_{olxMake}%2Cmodel_eq_{olxModel}%2Cpetrol_eq_{olxFuelType}%2Cprice_between{olxPrice}%2C
+#
+
+# Windows
+chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
+
+# headers = {
+#   'Accept':'application/json' 
+# }
+# responce = requests.get(url,headers=headers)
+# print("olx:pune:cars: ", responce.json())
+
+
+webbrowser.get(chrome_path).open(url)
